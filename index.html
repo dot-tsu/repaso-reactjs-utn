@@ -17,7 +17,7 @@
             <h1 class="text-3xl text-center font-bold w-[25rem] text-cyan-500">Seguro No Pagamos</h1>
             <p class="text-slate-500 text-center font-light my-2">Consulta</p>
             <hr>
-            <div id="card" class="w-[25rem]">
+            <div id="card" class="w-[25rem] transition-all duration-400">
                 <form
                     class="[&>label]:block [&>label]:my-3 [&>label]:relative [&>label]:border-b-2 [&>label]:border-slate-200 [&>label>input]:p-3 [&>label>span]:absolute [&>label>span]:bottom-3 [&>label>span]:text-slate-500 [&>label>input]:bg-teal-50 [&>label>span]:block [&>label>span]:transition-all [&>label>span]:duration-300 focus:[&>label>input]:outline-none">
                     <label>
@@ -112,7 +112,13 @@
              <li><span>Tipo de seguro seleccionado:</span> ${tipoDeSeguro}</li>
             </ul>
         `
-            document.getElementById('card').innerHTML = mensaje;
+            let card = document.getElementById('card');
+            card.classList.add('opacity-0');
+            setTimeout(() => {
+                card.classList.remove('opacity-0');
+                card.innerHTML = mensaje;
+            }, 200)
+
         })
 
     </script>
