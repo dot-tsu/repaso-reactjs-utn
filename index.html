@@ -8,9 +8,7 @@
     <meta name="description" content="Solicita un contacto de Seguro No Pagamos Cooperativa">
     <!-- Uso TailwindCSS porque me parece mas cómodo, de todos modos es CSS con clases nomás. https://tailwindcss.com/ -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
 
-    </script>
 </head>
 
 <body class="bg-cover bg-no-repeat bg-gradient-to-b from-teal-500 to-cyan-400">
@@ -19,53 +17,56 @@
             <h1 class="text-3xl text-center font-bold min-w-[19rem] text-cyan-500">Seguro No Pagamos</h1>
             <p class="text-slate-500 text-center font-light my-2">Consulta</p>
             <hr>
-            <form
-                class="[&>label]:block [&>label]:my-3 [&>label]:relative [&>label]:border-b-2 [&>label]:border-slate-200 [&>label>input]:p-3 [&>label>span]:absolute [&>label>span]:bottom-3 [&>label>span]:text-slate-500 [&>label>input]:bg-teal-50 [&>label>span]:block [&>label>span]:transition-all [&>label>span]:duration-300 focus:[&>label>input]:outline-none">
-                <label>
-                    <input type="text" id="nombre" name="nombre" required class="peer">
-                    <span
-                        class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Nombre</span>
-                </label>
-                <label>
-                    <input type="text" id="apellido" name="apellido" required class="peer">
-                    <span
-                        class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Apellido</span>
-                </label>
-                <label>
-                    <input type="tel" id="dni" name="dni" required class="peer">
-                    <span
-                        class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">DNI</span>
-                </label>
-                <label>
-                    <input type="email" id="email" name="email" required class="peer">
-                    <span
-                        class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Email</span>
-                </label>
-
-                <label>
-                    <input type="tel" id="telefono" name="telefono" required class="peer">
-                    <span
-                        class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Teléfono</span>
-                </label>
-
-                <label>
-                    <select id="tipoSeguro" name="tipoSeguro"
-                        class="w-full bg-teal-50 py-3 text-slate-500 outline-none">
-                        <option value="" disabled selected>Tipo de seguro</option>
-                        <option value="Basico">Básico</option>
-                        <option value="Intermedio">Intermedio</option>
-                        <option value="Premium">Premium</option>
-                    </select>
-                </label>
-                <div
-                    class="hover:bg-cyan-800 text-center w-full bg-cyan-500 p-4 rounded-md font-bold text-lg text-teal-50 transition-colors">
+            <div id="card" class="max-w-[25rem]">
+                <form
+                    class="[&>label]:block [&>label]:my-3 [&>label]:relative [&>label]:border-b-2 [&>label]:border-slate-200 [&>label>input]:p-3 [&>label>span]:absolute [&>label>span]:bottom-3 [&>label>span]:text-slate-500 [&>label>input]:bg-teal-50 [&>label>span]:block [&>label>span]:transition-all [&>label>span]:duration-300 focus:[&>label>input]:outline-none">
                     <label>
-                        <input type="submit" value="Hacer Consulta">
+                        <input type="text" id="nombre" name="nombre" required class="peer">
+                        <span
+                            class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Nombre</span>
                     </label>
-                </div>
-            </form>
+                    <label>
+                        <input type="text" id="apellido" name="apellido" required class="peer">
+                        <span
+                            class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Apellido</span>
+                    </label>
+                    <label>
+                        <input type="tel" id="dni" name="dni" required class="peer">
+                        <span
+                            class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">DNI</span>
+                    </label>
+                    <label>
+                        <input type="email" id="email" name="email" required class="peer">
+                        <span
+                            class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Email</span>
+                    </label>
 
+                    <label>
+                        <input type="tel" id="telefono" name="telefono" required class="peer">
+                        <span
+                            class="peer-focus:-translate-y-6 peer-valid:-translate-y-6 peer-focus:text-teal-500 peer-valid:text-teal-500 peer-focus:text-sm peer-valid:text-sm">Teléfono</span>
+                    </label>
+
+                    <label>
+                        <select id="tipoSeguro" name="tipoSeguro"
+                            class="w-full bg-teal-50 py-3 text-slate-500 outline-none">
+                            <option value="" disabled selected>Tipo de seguro</option>
+                            <option value="Basico">Básico</option>
+                            <option value="Intermedio">Intermedio</option>
+                            <option value="Premium">Premium</option>
+                        </select>
+                    </label>
+                    <div
+                        class="hover:bg-cyan-800 text-center w-full bg-cyan-500 p-4 rounded-md font-bold text-lg text-teal-50 transition-colors">
+                        <label>
+                            <input type="submit" value="Hacer Consulta">
+                        </label>
+                    </div>
+                </form>
+
+            </div>
         </section>
+
     </main>
     <footer class="text-center text-sm border-none min-h-[5svh] text-teal-50 hover:[&>a]:text-cyan-800">
         Challenge by
@@ -74,6 +75,47 @@
         <a href="https://linkedin.com/in/luca-di-marco" target="_blank"
             class="transition-colors underline underline-offset-2">tsu</a>. 😼
     </footer>
+    <script>
+        let precioDeSeguro, mensaje
+
+        let formulario = document.querySelector('form');
+        formulario.addEventListener('submit', (event) => {
+            event.preventDefault();
+            let datosFormulario = new FormData(formulario);
+
+            const nombre = datosFormulario.get('nombre'), apellido = datosFormulario.get('apellido'), dni = datosFormulario.get('dni'), email = datosFormulario.get('email'), telefono = datosFormulario.get('telefono'), tipoDeSeguro = document.getElementById('tipoSeguro').options[document.getElementById('tipoSeguro').selectedIndex].value;
+
+            switch (tipoDeSeguro) {
+                case 'Basico':
+                    precioDeSeguro = '$500';
+                    break;
+                case 'Intermedio':
+                    precioDeSeguro = '$1000';
+                    break;
+                case 'Premium':
+                    precioDeSeguro = '$1500'
+                    break;
+                default:
+                    precioDeSeguro = 'No seleccionado';
+            }
+            mensaje = `
+            <h2 class="text-xl py-3 font-light">¡Hola <span class="text-teal-500 font-semibold">${nombre} ${apellido}</span>! 👋🏻<h2>
+            <p class="text-slate-700 font-light">Gracias por elegirnos, el precio de tu seguro <span class="text-teal-500 font-semibold">${tipoDeSeguro}</span> es de <span class="text-teal-500 font-semibold">${precioDeSeguro}</span>.</p>
+            <p class="py-3 font-light">Hemos recibido tu consulta y te contactaremos pronto para brindarte toda la informacion que necesitas.</p>
+            <p class="font-light">Tu privacidad es muy importante para nosotros. Aquí tienes un resumen de tus datos enviados:</p>
+            <ul class="text-sm list-disc [&>li]:m-3 [&>li]:text-slate-500 [&>li>span]:font-normal [&>li>span]:text-teal-600 font-light">
+             <li><span>Nombre:</span> ${nombre}.</li>
+             <li><span>Apellido</span>: ${apellido}.</li>
+             <li><span>DNI:</span> ${dni}</li>
+             <li><span>Correo Electrónico:</span> ${email}</li>
+             <li><span>Teléfono:</span> ${telefono}</li>
+             <li><span>Tipo de seguro seleccionado:</span> ${tipoDeSeguro}</li>
+            </ul>
+        `
+            document.getElementById('card').innerHTML = mensaje;
+        })
+
+    </script>
 </body>
 
 </html>
