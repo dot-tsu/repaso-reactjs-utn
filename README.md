@@ -6,7 +6,7 @@ This project was created as part of a web development exercise for a course at U
 
 ## Preview
 
-[Deploy on GitHub Pages](tsuramii.github.io/repaso-reactjs-utn/)
+[Deploy on GitHub Pages](tsu.is-a.dev/repaso-reactjs-utn/)
 
 ### Screenshot
 
